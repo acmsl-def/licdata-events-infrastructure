@@ -96,6 +96,7 @@
               acmslLicdataEvents = acmsl-licdata-events.version;
               authors = builtins.concatStringsSep ","
                 (map (item: ''"${item}"'') maintainers);
+              dbusNext = dbus-next.version;
               desc = description;
               inherit homepage pname pythonMajorMinorVersion package
                 version;
@@ -117,6 +118,7 @@
             nativeBuildInputs = with python.pkgs; [ pip poetry-core ];
             propagatedBuildInputs = with python.pkgs; [
               acmsl-licdata-events
+              dbus-next
               pythoneda-shared-pythonlang-domain
               pythoneda-shared-pythonlang-infrastructure
             ];
@@ -150,6 +152,12 @@
                 NAME="$(command grep -m 1 '^Name: ' $METADATA | command cut -d ' ' -f 2)"
                 VERSION="$(command grep -m 1 '^Version: ' $METADATA | command cut -d ' ' -f 2)"
                 command ln -s $dep $out/deps/flakes/$NAME-$VERSION || true
+              done
+              for nixpkgsDep in ${dbus-next}; do
+                METADATA=$nixpkgsDep/lib/python${pythonMajorMinorVersion}/site-packages/*.dist-info/METADATA
+                NAME="$(command grep -m 1 '^Name: ' $METADATA | command cut -d ' ' -f 2)"
+                VERSION="$(command grep -m 1 '^Version: ' $METADATA | command cut -d ' ' -f 2)"
+                command ln -s $nixpkgsDep $out/deps/nixpkgs/$NAME-$VERSION || true
               done
             '';
 
