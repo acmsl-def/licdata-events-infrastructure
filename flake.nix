@@ -96,7 +96,7 @@
               acmslLicdataEvents = acmsl-licdata-events.version;
               authors = builtins.concatStringsSep ","
                 (map (item: ''"${item}"'') maintainers);
-              dbusNext = dbus-next.version;
+              dbusNext = python.pkgs.dbus-next.version;
               desc = description;
               inherit homepage pname pythonMajorMinorVersion package
                 version;
