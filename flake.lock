@@ -16,16 +16,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1738655815,
-        "narHash": "sha256-22lw1B4Xm9ruzGBpvWe62eyMpkBJwhL8Lii9q5q6Ahc=",
+        "lastModified": 1738939128,
+        "narHash": "sha256-NYk0Jqj0v6+fQ/5GrTd4DXwaJ7GJIFUco53f1chYNWM=",
         "owner": "acmsl-def",
         "repo": "licdata-events",
-        "rev": "31dec146791280030ff19d75d2948465aec00222",
+        "rev": "ecebbfc6df3113364d63a920bd3f40a70cd8a514",
         "type": "github"
       },
       "original": {
         "owner": "acmsl-def",
-        "ref": "0.0.31",
+        "ref": "0.0.32",
         "repo": "licdata-events",
         "type": "github"
       }
@@ -127,16 +127,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1738439013,
-        "narHash": "sha256-eSnp36wtypgtF+pkr2f5ZmzYflCpn1zo4IbprmKMfS0=",
+        "lastModified": 1738932382,
+        "narHash": "sha256-JJmpYuRCSaQMpm7KTp4ldpullVk16rEXKXjpqXCDOWw=",
         "owner": "pythoneda-shared-pythonlang-def",
         "repo": "domain",
-        "rev": "d34d98d730ac1301149e16f7fe1dd4bf49cd3894",
+        "rev": "dbe4399cec53bffedcbbf42ae51934842ca72dbc",
         "type": "github"
       },
       "original": {
         "owner": "pythoneda-shared-pythonlang-def",
-        "ref": "0.0.128",
+        "ref": "0.0.129",
         "repo": "domain",
         "type": "github"
       }
@@ -158,16 +158,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1738439084,
-        "narHash": "sha256-IMai9NgssQxGtOXDws6tMmQoslh7lCZ8IfiUuXKAXpQ=",
+        "lastModified": 1738932450,
+        "narHash": "sha256-ESLG3VRNCgoTDEWDvN2Vc52BolXT/pqX4Mq6wop/g7g=",
         "owner": "pythoneda-shared-pythonlang-def",
         "repo": "infrastructure",
-        "rev": "8d14c6f3dff9f11ddd31c27e4ff64bccf5b2061c",
+        "rev": "b7c3ed14bf3fe4c1e8363838927573e1aacdf290",
         "type": "github"
       },
       "original": {
         "owner": "pythoneda-shared-pythonlang-def",
-        "ref": "0.0.101",
+        "ref": "0.0.102",
         "repo": "infrastructure",
         "type": "github"
       }
