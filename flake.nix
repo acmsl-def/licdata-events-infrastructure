@@ -22,7 +22,7 @@
     acmsl-licdata-events = {
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
-      url = "github:acmsl-def/licdata-events/0.0.32";
+      url = "github:acmsl-def/licdata-events/0.0.33";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
@@ -33,14 +33,14 @@
     pythoneda-shared-pythonlang-banner = {
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
-      url = "github:pythoneda-shared-pythonlang-def/banner/0.0.83";
+      url = "github:pythoneda-shared-pythonlang-def/banner/0.0.85";
     };
     pythoneda-shared-pythonlang-domain = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
-      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.129";
+      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.131";
     };
     pythoneda-shared-pythonlang-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -49,7 +49,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.102";
+      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.104";
     };
   };
   outputs = inputs:
@@ -58,8 +58,8 @@
       let
         org = "acmsl";
         repo = "licdata-events-infrastructure";
-        version = "0.0.9";
-        sha256 = "0rlda16ck38kkkhqsn2jflk0gs3f1ksynxc5kci22hrfhan62aca";
+        version = "0.0.10";
+        sha256 = "0k4pznl1q2wvl75l3jrcrlxkl48x6lmi4ihvxq3zpm87c1xwlg4b";
         pname = "${org}-${repo}";
         pythonpackage = "org.acmsl.licdata.events.infrastructure";
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
